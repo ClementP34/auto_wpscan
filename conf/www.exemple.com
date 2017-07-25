@@ -1,1 +1,2 @@
-adresse@example.com
+adresse1@example.com
+exemple@adresse.fr
