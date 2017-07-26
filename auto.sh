@@ -23,7 +23,7 @@ $PATH_WPSCAN -u $URL --random-agent --follow-redirection --no-color >> $NAMEFILE
                 if echo $MAILCONTACT | grep '@'
                 then
                 #envoi des email avec les resultats dans le corp et en pieces jointe
-                cat $NAMEFILE | mail -A $NAMEFILE -s 'Scan WPS de '$URL' du '`date +%d-%m-%Y` $MAILCONTACT -a From:noreply@g-quick.fr
+                cat $NAMEFILE | mail -A $NAMEFILE -s 'Scan WPS de '$URL' du '`date +%d-%m-%Y` $MAILCONTACT -a From:adresse@denvoie.fr
                 fi
         done < $CONF_DIRECTORY/$URL
 done < $FILETEMP
